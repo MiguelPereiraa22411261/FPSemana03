@@ -1,6 +1,9 @@
 from collections import deque
 
-stack = deque()
-numbers = input(stack)
-stack.append(numbers)
+inputed = input()
+numbers = list(map(int, inputed.split()))
+stack = deque(numbers)
 print(stack)
+while stack:
+    number = stack.pop()
+    print(number ** 2)
