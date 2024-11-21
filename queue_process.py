@@ -5,6 +5,6 @@ words = inputed.split()
 queue = deque(words)
 print(queue)
 while queue:
-    word = queue.popleft()
+    word = queue.pop()
     if "o" in word:
         print(word)
